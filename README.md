@@ -1,4 +1,4 @@
-# Primal framework Sponza showcase (WIP)
+# Primal framework Sponza showcase
 ![alt text](https://github.com/callmeEthan/PrimeFramework_Sponza/blob/d6bf7f9768fba0e97f2d7055d827bb69d3eb70b2/Screenshots/header.jpg?raw=true)
 This is my demo to showcase Primal framework, this engine is built in gamemaker 2, intended for 2.5d or 3d games with pixel art style. It use deferred rendering with various post processing effect.  
 This demo is compiled with YCC for windows.  
