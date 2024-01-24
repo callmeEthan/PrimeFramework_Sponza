@@ -8,9 +8,11 @@ To tweak the graphic setting, press 2 to equip graphic controller tool, then rig
 
 It also include a map editor, press 1 to equip. You can use it to place light sources, 3d models, decals, foliages and smoke effect in the scene. While placing object, press and hold control node to move object around, right click and hold any where to control camera direction, middle click and hold to move camera relatively.  
 
+This engine is very much a **work in progress**, with more effect to be added or removed, Some configuration option don't actually do anything.  
+
 # Deferred rendering effects
 I used [**TheSnidr's deferred rendering**](https://thesnidr.itch.io/) as basis to learn. Most of the code is now replaced and or improved upon, with various new effect I learned/came up with.  
-Deferred rendering is used with basic color/normal/specular map (not PBR :disappointed:), Scene are encoded to 3 surfaces using MRT, containing color, normals, fragment type, depth, specular, roughness, scattering and emissive.  
+Deferred rendering is used with basic color/normal/specular map (not PBR :disappointed:). Scene are encoded to 3 surfaces using MRT, containing color, normals, fragment type, depth, specular, roughness, scattering and emissive.    
 
 ### Directional shadow
 Use a single shadow map to cover the entire area, utilize vertex transform to squeeze distance objects inside map while trying to maintain shadow quality near the camera.  
@@ -46,7 +48,7 @@ This is only suitable for outdoor scene, where lighting doesn't need to be accur
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/gi_comparision3.jpg?raw=true?raw=true" width="1024">
 ### Reflection
 Screen space reflection is mixed with SDF raycasting (using sdf map generated in Global Illumination). Use noise sampling for material roughness, and apply a temporal-filter with intensity depends on level of roughness (the blurrier/noiser it is, the heavier the TAA weight).  
-**Screen space reflection only vs mixed with SDF raycasting**
+**Image: screen space reflection only vs mixed with SDF raycasting**
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/reflection.jpg?raw=true" width="1024">
 ### God ray
 After reading [this blog](https://www.alexandre-pestana.com/volumetric-lights/), volumetric god ray is actually quite easy to implement, cast a ray from camera position to fragment position and check for directional shadow along the way.  
@@ -72,7 +74,7 @@ The final result is a tree model with custom attribute for vertex transform (win
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/foliage.jpg?raw=true?raw=true" width="1024">
 The mesh still have some unused attribute, which can be tweak for things like collision and stuff, probably.
 ## Other effects
-That I have nothing notable to talk about...
+That there is nothing notable to talk about...
 
 **Screen space ambient occlusion:** you probably already know what it is.  
 **Fog:** Apply a color using depth buffer.  
