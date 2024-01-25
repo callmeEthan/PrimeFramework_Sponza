@@ -49,7 +49,7 @@ This is only suitable for outdoor scene, where lighting doesn't need to be accur
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/gi_comparision3.jpg?raw=true?raw=true" width="1024">
 ### Reflection
 Screen space reflection is mixed with SDF raycasting (using sdf map generated in Global Illumination). Use noise sampling for material roughness, and apply a temporal-filter with intensity depends on level of roughness (the blurrier/noiser it is, the heavier the TAA weight).  
-SDF reflection isn't perfect due to low voxel resolution, it's just good enough for estimating sky mask.  
+SDF reflection isn't perfect due to low voxel resolution, but good enough for estimating sky mask.  
 **Image: screen space reflection only vs mixed with SDF raycasting**
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/reflection.jpg?raw=true" width="1024">
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/reflection2.jpg?raw=true" width="1024">
