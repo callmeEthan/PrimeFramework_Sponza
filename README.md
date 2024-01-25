@@ -65,7 +65,7 @@ For particles effect, [**theSnidr's sPart 3D Particle System**](https://marketpl
 Smoke shadow was quite tricky because the particles are order-independent, and you can't render transparency with depth buffer.  
 So I apply a noise sampling instead of transparency, then process lights effect on it as if it's a normal scene. Finally, apply a heavy amount of temporal-filter/down-sampling to hide the noise.  
 I also include global illumination in the light sampling to make it more realistic.  
-For now, the god ray doesn't play well with particle yet.  
+God ray also sample particle depth to avoid clipping.  
 **Image: Particle noise sampling, final result**
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/smoke_shadow1.jpg?raw=true?raw=true" width="1024">
 Smoke effect blending into the environment pretty well
