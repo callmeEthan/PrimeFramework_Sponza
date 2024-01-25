@@ -1,6 +1,6 @@
 # Primal framework Sponza showcase
 ![alt text](https://github.com/callmeEthan/PrimeFramework_Sponza/blob/d6bf7f9768fba0e97f2d7055d827bb69d3eb70b2/Screenshots/header.jpg?raw=true)
-This is my demo to showcase Primal framework, this engine is built in gamemaker 2, intended for 2.5d or 3d games with pixel art style. It use deferred rendering with various post processing effect.  
+This is my demo to showcase Primal framework, this engine is built in gamemaker 2, intended for 2.5d or 3d games with pixel art style. It use deferred rendering with various post processing effect. Most shader are written in GLSL ES.  
 This demo is compiled with YCC for windows.  
 
 **Upon load, it might take a few minutes to load the scene, when it finish you can use mouse to look around, and WASD keys to move the camera.
@@ -8,7 +8,7 @@ To tweak the graphic setting, press 2 to equip graphic controller tool, then rig
 
 It also include a map editor, press 1 to equip. You can use it to place light sources, 3d models, decals, foliages and smoke effect in the scene. While placing object, press and hold control node to move object around, right click and hold any where to control camera direction, middle click and hold to move camera relatively.  
 
-This engine is very much a **work in progress**, with more effect to be added or removed, Some configuration option don't actually do anything.  
+This engine is very much a **work in progress**, with more effect to be added or removed, **Some configuration option don't actually do anything**.  
 
 # Deferred rendering effects
 I used [**TheSnidr's deferred rendering**](https://thesnidr.itch.io/) as basis to learn. Most of the code is now replaced and or improved upon, with various new effect I learned/came up with.  
@@ -65,6 +65,7 @@ For particles effect, [**theSnidr's sPart 3D Particle System**](https://marketpl
 Smoke shadow was quite tricky because the particles are order-independent, and you can't render transparency with depth buffer.  
 So I apply a noise sampling instead of transparency, then process lights effect on it as if it's a normal scene. Finally, apply a heavy amount of temporal-filter/down-sampling to hide the noise.  
 I also include global illumination in the light sampling to make it more realistic.  
+For now, the god ray doesn't play well with particle yet.  
 **Image: Particle noise sampling, final result**
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/smoke_shadow1.jpg?raw=true?raw=true" width="1024">
 Smoke effect blending into the environment pretty well
