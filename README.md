@@ -1,12 +1,13 @@
 # Primal framework Sponza showcase
 ![alt text](https://github.com/callmeEthan/PrimeFramework_Sponza/blob/d6bf7f9768fba0e97f2d7055d827bb69d3eb70b2/Screenshots/header.jpg?raw=true)
-This is my demo to showcase Primal framework, this engine is built in gamemaker 2, intended for 2.5d or 3d games with pixel art style. It use deferred rendering with various post processing effect. Most shader are written in GLSL ES.  
+This is my demo to showcase Primal framework, this engine is built in gamemaker 2, intended for 2.5d or 3d games with pixel art style. It use deferred rendering with various post processing effects. Most shaders are written in GLSL ES.  
 This demo is compiled with YYC for windows.  
 
-**Upon load, it might take a few minutes to load the scene, when it finish you can use mouse to look around, and WASD keys to move the camera.
+**Upon load, it might take a few minutes to load the scene, when it finish you can use mouse to look around, and WASD keys to move the camera.  
 To tweak the graphic setting, press 2 to equip graphic controller tool, then right click to open options dialog. Click and hold any input option and drag the mouse left or right to adjust the value automatically.**  
 
-It also include a map editor, press 1 to equip. You can use it to place light sources, 3d models, decals, foliages and smoke effect in the scene. While placing object, press and hold control node to move object around, right click and hold any where to control camera direction, middle click and hold to move camera relatively.  
+It also include a map editor, press 1 to equip. You can use it to place light sources, 3d models, decals, foliages and smoke effect in the scene.  
+While placing object, press and hold control node to move object around, right click and hold any where to control camera direction, middle click and hold to move camera relatively.  
 
 This engine is very much a **work in progress**, with more effect to be added or removed, **Some configuration option don't actually do anything**.  
 
@@ -86,6 +87,11 @@ That there is nothing notable to talk about...
 **Depth of field:** Bokeh blur sampling.  
 **Cloud:** [**TheSnidr's** worley noise cloud](https://www.youtube.com/watch?v=SijNZQne4a4) with some tweak.  
 **Bloom**  
+
+## Benchmark
+GTX 1060 might struggle to reach 50fps at full 1080p resolution, but can reach 60fps by lower lighting and effect resolution to 0.6~0.7  
+Of course RTX 2060 should have no problem running at 60fps  
+
 ## Credit
 [petercowal](https://github.com/petercowal) for his 2d luminance model.  
 [TheSnidr](https://www.youtube.com/TheSnidr), you beautiful man.  
