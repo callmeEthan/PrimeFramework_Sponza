@@ -62,7 +62,7 @@ But large number of ray step can cost performance, instead, use lower number of 
 <img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/godray2.jpg?raw=true?raw=true" width="1024">
 Ray detail are not well conceived in photo but you can see them clearer in motion.
 ### Smoke shadow
-For particles effect, [**theSnidr's sPart 3D Particle System**](https://marketplace.gamemaker.io/assets/7299/spart-3d-particle-system) is implemented, modified to work with deferred rendering. Using depth gbuffer to create soft shadow effect.  
+For particles effect, [**theSnidr's sPart 3D Particle System**](https://marketplace.gamemaker.io/assets/7299/spart-3d-particle-system) is implemented, modified to work with deferred rendering. Using depth gbuffer to create soft particle effect.  
 Smoke shadow was quite tricky because the particles are order-independent, and you can't render transparency with depth buffer.  
 So I apply a noise sampling instead of transparency, then process lights effect on it as if it's a normal scene. Finally, apply a heavy amount of temporal-filter/down-sampling to hide the noise.  
 I also include global illumination in the light sampling to make it more realistic.  
