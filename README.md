@@ -96,3 +96,4 @@ Of course RTX 2060 should have no problem running at 60fps
 [petercowal](https://github.com/petercowal) for his 2d luminance model.  
 [TheSnidr](https://www.youtube.com/TheSnidr), you beautiful man.  
 All credit to their respective creator for their intellectual work.  
+![alt text](https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/ads.jpg?raw=true)
