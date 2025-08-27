@@ -11,6 +11,7 @@ To tweak the graphic setting, press 2 to equip graphic controller tool, then rig
 It also include a map editor, press 1 to equip. You can use it to place light sources, 3d models, decals, foliages and smoke effect in the scene.  
 While placing object, press and hold control node to move object around, right click and hold any where to control camera direction, middle click and hold to move camera relatively.  
 
+![alt text]([https://github.com/callmeEthan/PrimeFramework_Sponza/blob/d6bf7f9768fba0e97f2d7055d827bb69d3eb70b2/Screenshots/header.jpg?raw=true](https://github.com/callmeEthan/PrimeFramework_Sponza/raw/refs/heads/main/Screenshots/preview.webp))
 This engine is very much a **work in progress**, with more effect to be added or removed, **Some configuration option don't actually do anything**.  
 
 # Deferred rendering effects
