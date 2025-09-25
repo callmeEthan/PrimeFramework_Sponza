@@ -100,4 +100,3 @@ Of course RTX 2060 should have no problem running at 60fps
 [TheSnidr](https://www.youtube.com/TheSnidr), you beautiful man.  
 All credit to their respective creator for their intellectual work.  
 [<img src="https://github.com/callmeEthan/PrimeFramework_Sponza/blob/main/Screenshots/ads.jpg?raw=true">](mailto:name_Ethan@outlook.com)  
-💵 **You can hire me on [Fiverr](https://www.fiverr.com/callme_ethan/)**
